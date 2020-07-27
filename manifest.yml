@@ -1,6 +1,12 @@
 applications:
-- name: watson-assistant-simple
+- name: tennis-concierge-watson
   command: npm start
   path: .
-  memory: 256M
+  memory: 64M
   instances: 1
+  env:
+    ASSISTANT_URL: https://gateway-wdc.watsonplatform.net/assistant/api
+    ASSISTANT_ID: 8329d0ff-6d8a-4cb8-9b3f-71bb22618421
+    ASSISTANT_IAM_APIKEY: XXX
+    ASSISTANT_IAM_URL: https://api.us-east.assistant.watson.cloud.ibm.com/instances/327140a6-cae0-4cf9-a72e-6e86d4c8eb5c
+
